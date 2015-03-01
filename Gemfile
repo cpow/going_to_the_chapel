@@ -9,6 +9,7 @@ gem 'bourbon'
 gem 'bitters'
 gem 'neat'
 gem 'refills'
+gem 'rails_12factor', group: :production
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
