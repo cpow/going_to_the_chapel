@@ -1,4 +1,4 @@
-$parallax-window-height: 40em;
+$parallax-window-height: 50em;
 $parallax-background-height: $parallax-window-height * 2;
 
 .parallax-window {
@@ -10,18 +10,18 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 .parallax-static-content {
-  color: #9A9A8A;
+  color: $medium-gray;
   padding: 8em 0;
   position: relative;
   z-index: 9;
 }
 
 .parallax-background {
-  background: image-url("banner.png") repeat;
-  background-position: bottom;
+  background: image-url("banner.jpg") repeat;
+  background-position: -300px -600px;
   background-size: cover;
   background-color: beige;
-  height: $parallax-window-height * 1.5;
+  height: $parallax-window-height * 2;
   position: absolute;
   top: - $parallax-window-height / 3;
   width: 100%;

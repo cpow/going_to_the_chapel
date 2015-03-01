@@ -9,7 +9,7 @@ parallax = ->
     windowInnerHeight = window.innerHeight
     plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop
     plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop
-    plxSpeed = 2.25
+    plxSpeed = 0.35
     plxBackground.css "top", -(plxWindowTopToWindowTop * plxSpeed) + "px"
   return
 $(document).ready ->

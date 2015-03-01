@@ -6,3 +6,11 @@
 @import 'neat/neat';
 @import 'base/base';
 @import 'refills/refills';
+
+.container {
+  @include outer-container();
+}
+
+article {
+  @include row();
+}
