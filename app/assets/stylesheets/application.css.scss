@@ -2,10 +2,11 @@
 *= require_self
 */
 
-@import 'bourbon/bourbon';
-@import 'neat/neat';
-@import 'base/base';
-@import 'refills/refills';
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "refills/type-system-serif";
+@import "base/base";
+@import "refills/refills";
 
 .container {
   @include outer-container();
