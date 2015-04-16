@@ -22,7 +22,7 @@
   $card-border: 1px solid $card-border-color;
   $card-background: lighten($card-border-color, 10%);
   $card-header-background: $card-background;
-  $card-hover-background: lighten($card-background, 5%);
+  $card-hover-background: transparentize(darken($card-background, 5), 0.8);
   $card-image-background: #DBD199;
   $card-image-hover-background: lighten($card-image-background, 5%);
   $card-margin: 1em;
@@ -30,10 +30,9 @@
   @include flex-basis(15em);
   @include flex-grow(1);
   @include transition (all 0.2s ease-in-out);
-  background-color: $card-background;
+  //background-color: $card-background;
   border-radius: $base-border-radius;
-  border: $card-border;
-  box-shadow: 0 2px 4px darken($base-background-color, 10%);
+  //border: $card-border;
   cursor: pointer;
   margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;
@@ -47,11 +46,11 @@
 
   .card-image {
     overflow: hidden;
-    max-height: 150px;
+    max-height: 200px;
 
     img {
       @include transition (all 0.2s ease-in-out);
-      background: $card-image-background;
+      //background: $card-image-background;
       border-top-left-radius: $base-border-radius;
       border-top-right-radius: $base-border-radius;
       width: 100%;
@@ -59,12 +58,14 @@
   }
 
   .card-header {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5em;
     @include transition (all 0.2s ease-in-out);
-    background-color: $card-header-background;
+    //background-color: $card-header-background;
     border-bottom: $card-border;
     border-radius: $base-border-radius $base-border-radius 0 0;
-    font-weight: bold;
-    line-height: 1.5em;
+    font-weight: 400;
+    line-height: 1.6em;
     padding: ($base-spacing / 3) ($base-spacing / 2);
   }
 

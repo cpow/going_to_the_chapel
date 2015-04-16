@@ -8,7 +8,7 @@
 
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
-  $centered-navigation-background: #E7F1EC;
+  $centered-navigation-background: white;
   $centered-navigation-color: transparentize($base-font-color, 0.3);
   $centered-navigation-color-hover: $base-font-color;
   $centered-navigation-height: 60px;
@@ -102,6 +102,8 @@
   }
 
   ul li.nav-link {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5em;
     background: $centered-navigation-background;
     display: block;
     line-height: $centered-navigation-height;
@@ -143,10 +145,10 @@
     }
   }
 
-  .logo img {
+  .logo i {
     margin-bottom: -$centered-navigation-logo-height / 3;
     max-height: $centered-navigation-logo-height;
-    opacity: 0.6;
+    color: #2E0854;
   }
 
   // Sub menus

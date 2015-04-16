@@ -1,8 +1,44 @@
+//$parallax-window-height: 50em;
+//$parallax-background-height: $parallax-window-height * 2;
+
+//.parallax-window {
+//  height: $parallax-window-height;
+//  overflow: hidden;
+//  position: relative;
+//  text-align: center;
+//  width: 100%;
+//}
+
+//.parallax-static-content {
+//  font-family: 'Courgette', cursive;
+//  color: #ffffff;
+//  padding: 8em 0;
+//  position: relative;
+//  z-index: 9;
+//  font-size: 40px;
+//  b {
+//    font-weight: 400;
+//    padding: 20px;
+//  }
+//}
+//
+//.parallax-background {
+//  background: image-url("banner.jpg") repeat;
+//  background-position: -300px -600px;
+//  background-size: cover;
+//  background-color: beige;
+//  height: $parallax-window-height * 2;
+//  position: absolute;
+//  top: - $parallax-window-height / 3;
+//  width: 100%;
+//}
+
+// Based on http://codepen.io/skeurentjes/
 $parallax-window-height: 50em;
 $parallax-background-height: $parallax-window-height * 2;
 
 .parallax-window {
-  height: $parallax-window-height;
+  min-height: $parallax-window-height;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -10,17 +46,12 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 .parallax-static-content {
-  color: $light-gray;
-  padding: 8em 0;
+  font-family: 'Great Vibes', cursive;
+  font-size: 5.5em;
+  color: #fff;
+  padding: 2em 0;
   position: relative;
   z-index: 9;
-  font-size: 40px;
-  b {
-    font-weight: 400;
-    padding: 20px;
-    background: $dark-gray;
-    opacity: 0.4;
-  }
 }
 
 .parallax-background {
@@ -28,7 +59,8 @@ $parallax-background-height: $parallax-window-height * 2;
   background-position: -300px -600px;
   background-size: cover;
   background-color: beige;
-  height: $parallax-window-height * 2;
+  height: $parallax-background-height;
+  left: 0;
   position: absolute;
   top: - $parallax-window-height / 3;
   width: 100%;

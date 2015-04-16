@@ -9,6 +9,7 @@
   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
   <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Great+Vibes|Satisfy|Courgette' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <%= render partial: "refills/centered_navigation" %>
@@ -16,6 +17,7 @@
 <%= render partial: "refills/footer_2" %>
 <script>
   var bittersMap = (function () {
+    var markerImage = '<%= asset_path "loveinterest.png" %>';
     var myLatlng = new google.maps.LatLng(41.252387, -72.901065),
         mapCenter = new google.maps.LatLng(41.252387, -72.901065),
         mapCanvas = document.getElementById('map_canvas'),
@@ -32,9 +34,10 @@
           '<div id="content">'+
           '<div id="siteNotice">'+
           '</div>'+
-          '<h1 id="firstHeading" class="firstHeading">thoughtbot</h1>'+
+          '<h1 id="firstHeading" class="firstHeading">Lighthouse Point Park</h1>'+
           '<div id="bodyContent"'+
-          '<p>Sveavägen 98</p>'+
+          '<p>06/11/2016</p>'+
+          '<a href="http://www.cityofnewhaven.com/parks/parksinformation/lighthousepoint.asp">website</a>' +
           '</div>'+
           '</div>',
         infowindow = new google.maps.InfoWindow({
@@ -44,7 +47,8 @@
         marker = new google.maps.Marker({
           position: myLatlng,
           map: map,
-          title: 'thoughtbot (Sweden)'
+          title: 'Lighthouse Point Park',
+          icon: markerImage
         });
 
     return {

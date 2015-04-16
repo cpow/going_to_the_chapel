@@ -22,9 +22,11 @@
   }
 
   .copy {
+    font-family: 'Great Vibes', cursive;
     @include transform(translate(-50%, -50%));
     left: 50%;
     margin: auto;
+    width: 100%;
     position: absolute;
     text-align: center;
     top: 50%;
@@ -32,8 +34,8 @@
 
     p {
       color: white;
-      font-size: 3em;
-      font-weight: 400;
+      font-size: 5.5em;
+      font-weight: 600;
       line-height: 1.5em;
       padding: 1em 2em;
       position: relative;
