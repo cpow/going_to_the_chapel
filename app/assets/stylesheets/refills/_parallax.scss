@@ -52,7 +52,8 @@ $parallax-body-background-height: $parallax-body-window-height * 2;
   overflow: hidden;
   position: relative;
   text-align: center;
-  width: 100%;
+  width: 95%;
+  margin: auto;
   margin-bottom: 20px;
 }
 
@@ -78,7 +79,7 @@ $parallax-body-background-height: $parallax-body-window-height * 2;
 
 .lighthouse-parallax-background {
   background: image-url("lighthouse-park-body.jpg") repeat;
-  background-position: -200px 750px;
+  background-position: 0 800px;
   background-size: cover;
   background-color: beige;
   height: $parallax-body-background-height;
