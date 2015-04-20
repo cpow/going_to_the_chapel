@@ -35,7 +35,9 @@
 
 // Based on http://codepen.io/skeurentjes/
 $parallax-window-height: 50em;
+$parallax-body-window-height: 30em;
 $parallax-background-height: $parallax-window-height * 2;
+$parallax-body-background-height: $parallax-body-window-height * 2;
 
 .parallax-window {
   min-height: $parallax-window-height;
@@ -45,6 +47,16 @@ $parallax-background-height: $parallax-window-height * 2;
   width: 100%;
 }
 
+.parallax-body-window {
+  max-height: $parallax-body-window-height;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
 .parallax-static-content {
   font-family: 'Great Vibes', cursive;
   font-size: 5.5em;
@@ -52,6 +64,28 @@ $parallax-background-height: $parallax-window-height * 2;
   padding: 2em 0;
   position: relative;
   z-index: 9;
+}
+
+.parallax-body-static-content {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5em;
+  color: #fff;
+  padding-bottom: 4em;
+  padding-top: 1em;
+  position: relative;
+  z-index: 9;
+}
+
+.lighthouse-parallax-background {
+  background: image-url("lighthouse-park-body.jpg") repeat;
+  background-position: -200px 750px;
+  background-size: cover;
+  background-color: beige;
+  height: $parallax-body-background-height;
+  left: 0;
+  top: - $parallax-body-background-height / 3;
+  position: absolute;
+  width: 100%;
 }
 
 .parallax-background {
