@@ -37,7 +37,7 @@
   margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;
   position: relative;
-  
+
   a {
     text-decoration: none;
     color: $base-font-color;
@@ -78,15 +78,15 @@
       margin: 0 0 ($base-spacing / 2);
     }
   }
-  
+
   &:focus,
   &:hover {
     background-color: $card-hover-background;
-    
+
     .card-image img {
       background: $card-image-hover-background;
     }
-  
+
     .card-header {
       background-color: $card-hover-background;
     }

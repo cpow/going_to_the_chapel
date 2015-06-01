@@ -77,6 +77,18 @@ $parallax-body-background-height: $parallax-body-window-height * 2;
   z-index: 9;
 }
 
+.our-story-parallax-background {
+  background: image-url("our_story_parallax.jpg") repeat;
+  background-position: 0 800px;
+  background-size: cover;
+  background-color: beige;
+  height: $parallax-body-background-height;
+  left: 0;
+  top: - $parallax-body-background-height / 3;
+  position: absolute;
+  width: 100%;
+}
+
 .st-anns-parallax-background {
   background: image-url("st-anns-large.JPG") repeat;
   background-position: 0 800px;
