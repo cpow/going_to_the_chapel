@@ -57,7 +57,6 @@ $parallax-body-background-height: $parallax-body-window-height * 2;
   margin-bottom: 20px;
 }
 
-
 .parallax-static-content {
   font-family: 'Great Vibes', cursive;
   font-size: 5.5em;
@@ -78,8 +77,8 @@ $parallax-body-background-height: $parallax-body-window-height * 2;
 }
 
 .our-story-parallax-background {
-  background: image-url("our_story_parallax.jpg") repeat;
-  background-position: 0 800px;
+  background: image-url("suit-and-dress.jpg") repeat;
+  background-position: 0 0px;
   background-size: cover;
   background-color: beige;
   height: $parallax-body-background-height;
