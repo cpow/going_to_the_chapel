@@ -8,6 +8,7 @@
 @import "refills/type-system-serif";
 @import "base/base";
 @import "refills/refills";
+@import "refills/side-image";
 
 .container {
   @include outer-container();

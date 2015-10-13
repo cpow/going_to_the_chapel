@@ -1,28 +1,13 @@
-<!--
-Add the code below to the bottom of your page, just before the closing </body> tag.
-Edit myLatlng and the other variables.
-
-Find syntax for Features that can be styled here:
-
-https://developers.google.com/maps/documentation/javascript/reference#MapTypeStyleFeatureType
-
-Or use a service such as:
-
-http://software.stadtwerk.org/google_maps_colorizr/#
-http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
-https://developers.google.com/maps/documentation/javascript/tutorial
--->
-
 <div id="map_canvas"></div>
   <script>
     var bittersMap = (function () {
       var markerImage = '<%= asset_path "loveinterest.png" %>';
-      var myLatlng = new google.maps.LatLng(41.252387, -72.901065),
-          mapCenter = new google.maps.LatLng(41.252387, -72.901065),
+      var newHavenLatLng = new google.maps.LatLng(41.3025389,-72.9312317),
+          mapCenter = new google.maps.LatLng(41.3025389,-72.9312317),
           mapCanvas = document.getElementById('map_canvas'),
           mapOptions = {
             center: mapCenter,
-            zoom: 13,
+            zoom: 14,
             scrollwheel: false,
             draggable: true,
             disableDefaultUI: true,
@@ -33,10 +18,10 @@ https://developers.google.com/maps/documentation/javascript/tutorial
             '<div id="content">'+
             '<div id="siteNotice">'+
             '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Lighthouse Point Park</h1>'+
+            '<h1 id="firstHeading" class="firstHeading">New Haven Hotel</h1>'+
             '<div id="bodyContent"'+
-            '<p>06/11/2016</p>'+
-            '<a href="http://www.cityofnewhaven.com/parks/parksinformation/lighthousepoint.asp">website</a>' +
+            '<p>The Preferred Hotel</p>'+
+            '<a href="">website</a>' +
             '</div>'+
             '</div>',
           infowindow = new google.maps.InfoWindow({
@@ -44,10 +29,9 @@ https://developers.google.com/maps/documentation/javascript/tutorial
             maxWidth: 300
           }),
           marker = new google.maps.Marker({
-            position: myLatlng,
+            position: newHavenLatLng,
             map: map,
-            title: 'Lighthouse Point Park',
-            icon: markerImage
+            title: 'New Haven Hotel',
           });
 
       return {
@@ -72,3 +56,4 @@ https://developers.google.com/maps/documentation/javascript/tutorial
     bittersMap.init();
   </script>
 <br>
+
