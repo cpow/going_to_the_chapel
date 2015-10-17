@@ -2,6 +2,7 @@
   <script>
     var bittersMap = (function () {
       var markerImage = '<%= asset_path "loveinterest.png" %>';
+      var omniLatLng = new google.maps.LatLng(41.3056405,-72.9295694);
       var newHavenLatLng = new google.maps.LatLng(41.3025389,-72.9312317),
           mapCenter = new google.maps.LatLng(41.3025389,-72.9312317),
           mapCanvas = document.getElementById('map_canvas'),
@@ -23,16 +24,40 @@
             '<p>The Preferred Hotel</p>'+
             '<a href="">website</a>' +
             '</div>'+
-            '</div>',
-          infowindow = new google.maps.InfoWindow({
+            '</div>';
+      var infowindow = new google.maps.InfoWindow({
             content: contentString,
             maxWidth: 300
-          }),
-          marker = new google.maps.Marker({
-            position: newHavenLatLng,
-            map: map,
-            title: 'New Haven Hotel',
           });
+
+
+      var omniContentString =
+          '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">Omni Hotel</h1>'+
+          '<div id="bodyContent"'+
+          '<p>If you want a change of pace</p>'+
+          '<a href="">website</a>' +
+          '</div>'+
+          '</div>';
+
+      var omniInfowindow = new google.maps.InfoWindow({
+            content: omniContentString,
+            maxWidth: 300
+          });
+
+      var marker = new google.maps.Marker({
+          position: newHavenLatLng,
+          map: map,
+          title: 'New Haven Hotel',
+        });
+
+      var omniMarker = new google.maps.Marker({
+          position: omniLatLng,
+          map: map,
+          title: 'Omni Hotel',
+        });
 
       return {
         init: function () {
@@ -46,6 +71,9 @@
             ]}
           ]);
 
+          google.maps.event.addListener(omniMarker, 'click', function () {
+            omniInfowindow.open(map,omniMarker);
+          });
           google.maps.event.addListener(marker, 'click', function () {
             infowindow.open(map,marker);
           });
