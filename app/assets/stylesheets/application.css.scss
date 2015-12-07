@@ -9,6 +9,7 @@
 @import "base/base";
 @import "refills/refills";
 @import "refills/side-image";
+@import "refills/flashes";
 
 .container {
   @include outer-container();
@@ -16,4 +17,10 @@
 
 article {
   @include row();
+}
+
+.flash-notice {
+  li {
+    list-style: none;
+  }
 }
