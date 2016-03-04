@@ -13,6 +13,17 @@
 
 .container {
   @include outer-container();
+  ul.registry-logos {
+    width: 50%;
+    margin: auto;
+
+    li {
+      max-width: 500px;
+      border-bottom: 1px solid black;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+  }
 }
 
 article {

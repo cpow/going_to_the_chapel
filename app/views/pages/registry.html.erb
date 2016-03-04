@@ -1,0 +1,31 @@
+<div class="container">
+  <%= render partial: "refills/registry" %>
+  <article class="type-system-serif">
+    <h3>Thank You!</h3>
+    <p>
+      Thank you SO much for the generosity you have all shown us over the years and throughout our lives. We are currently registered at three different stores for you to choose from.
+      <p>
+        Please click on a logo below to be taken to the registry for that store. Thank you!
+      </p>
+    </p>
+    <div class="registry">
+      <ul class='registry-logos'>
+        <li>
+          <%= link_to "https://www.anthropologie.com/anthro/registry/listing?registryId=N2Y4ZWY2OGZL", target: "_blank" do %>
+            <%= image_tag "anthro-logo.png" %>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?registryId=543129013&eventType=Wedding&pwsurl=?mcid=EM_triggeredem_emailregistryplural__allpromos", target: "_blank" do %>
+            <%= image_tag "bbb-logo.png" %>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "http://www1.macys.com/registry/wedding/guest/?registryId=2297777", target: "_blank" do %>
+            <%= image_tag "macys-logo.jpg" %>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </article>
+</div>
