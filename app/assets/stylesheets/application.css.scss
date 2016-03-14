@@ -11,6 +11,14 @@
 @import "refills/side-image";
 @import "refills/flashes";
 
+.nav-link {
+  .logo {
+    img {
+      max-height: 100px;
+    }
+  }
+}
+
 .container {
   @include outer-container();
   ul.registry-logos {
