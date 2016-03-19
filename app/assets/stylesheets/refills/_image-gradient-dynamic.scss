@@ -22,7 +22,7 @@
   }
 
   .copy {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'something', cursive;
     @include transform(translate(-50%, -50%));
     left: 50%;
     margin: auto;
@@ -34,11 +34,19 @@
 
     p {
       color: white;
-      font-size: 5.5em;
+      font-size: 7.0em;
       font-weight: 600;
       line-height: 1.5em;
       padding: 1em 2em;
       position: relative;
+
+      @media only screen and (max-width: 1024px){
+        font-size: 4.0em;
+      }
+
+      @media only screen and (max-width: 800px){
+        font-size: 3.0em;
+      }
     }
   }
 

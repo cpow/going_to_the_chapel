@@ -51,6 +51,7 @@ $parallax-body-background-height: $parallax-body-window-height * 2;
   max-height: $parallax-body-window-height;
   overflow: hidden;
   position: relative;
+  font-weight: 600;
   text-align: center;
   width: 95%;
   margin: auto;
@@ -58,22 +59,35 @@ $parallax-body-background-height: $parallax-body-window-height * 2;
 }
 
 .parallax-static-content {
-  font-family: 'Great Vibes', cursive;
-  font-size: 5.5em;
+  font-family: 'something', cursive;
+  font-size: 7.0em;
   color: #fff;
-  padding: 2em 0;
+  padding: 1.5em 0;
   position: relative;
+  font-weight: 600;
   z-index: 9;
+
+  span {
+    font-size: .7em;
+  }
+
+  @media only screen and (max-width: 786px){
+    font-size: 3.0em;
+  }
 }
 
 .parallax-body-static-content {
-  font-family: 'Great Vibes', cursive;
-  font-size: 3.5em;
+  font-family: 'something', cursive;
+  font-size: 6.5em;
   color: #fff;
   padding-bottom: 4em;
   padding-top: 1em;
   position: relative;
   z-index: 9;
+
+  @media only screen and (max-width: 786px){
+    font-size: 3.0em;
+  }
 }
 
 .our-story-parallax-background {

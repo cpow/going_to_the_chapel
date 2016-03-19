@@ -3,6 +3,11 @@
 *= require font-awesome
 */
 
+@font-face {
+  font-family: "something";
+  src: font_url("30AA24_0_0.ttf") format("truetype");
+}
+
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "refills/type-system-serif";

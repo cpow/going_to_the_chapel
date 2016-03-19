@@ -67,8 +67,6 @@
   // Nav menu
 
   .centered-navigation-wrapper {
-    @include outer-container;
-    @include clearfix;
     position: relative;
     z-index: 999;
   }
@@ -102,8 +100,8 @@
   }
 
   ul li.nav-link {
-    font-family: 'Great Vibes', cursive;
-    font-size: 1.5em;
+    font-family: 'something', cursive;
+    font-size: 2.0em;
     background: $centered-navigation-background;
     display: block;
     line-height: $centered-navigation-height;
