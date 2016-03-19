@@ -16,6 +16,36 @@
 @import "refills/side-image";
 @import "refills/flashes";
 
+.registry ul.registry-logos li {
+  text-align: center;
+
+  h3 {
+    font-family: "something";
+    font-size: 4em;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+}
+
+strong {
+    font-family: "something" !important;
+    font-size: 1.5em;
+    font-weight: 600 !important;
+}
+
+h1 { 
+  font-family: "something" !important;
+  font-size: 3.2em !important;
+  font-weight: 600 !important;
+}
+
+h3 {
+  font-family: "something" !important;
+  font-size: 2.0em !important;
+  font-weight: 600 !important;
+  margin-bottom: 0 !important;
+}
+
 .nav-link {
   .logo {
     img {

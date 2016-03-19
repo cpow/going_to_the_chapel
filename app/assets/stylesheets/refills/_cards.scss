@@ -59,12 +59,12 @@
 
   .card-header {
     font-family: 'something', cursive;
-    font-size: 1.7em;
+    font-size: 2.3em;
     @include transition (all 0.2s ease-in-out);
     //background-color: $card-header-background;
     border-bottom: $card-border;
     border-radius: $base-border-radius $base-border-radius 0 0;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.6em;
     padding: ($base-spacing / 3) ($base-spacing / 2);
   }
