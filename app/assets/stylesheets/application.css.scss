@@ -27,16 +27,26 @@
   }
 }
 
-strong {
-    font-family: "something" !important;
-    font-size: 1.5em;
-    font-weight: 600 !important;
+span.bold {
+  font-size: 1.2em;
+  text-decoration: underline;
+  font-weight: 400 !important;
 }
 
-h1 { 
+strong {
+  font-family: "something" !important;
+  font-size: 1.5em;
+  font-weight: 600 !important;
+}
+
+h1 {
   font-family: "something" !important;
   font-size: 3.2em !important;
   font-weight: 600 !important;
+}
+
+.container {
+  font-size: 1.25em;
 }
 
 h3 {
