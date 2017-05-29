@@ -1,0 +1,50 @@
+/*
+*= require_self
+*= require font-awesome
+*/
+
+@font-face {
+  font-family: "something";
+  src: font_url("30AA24_0_0.ttf") format("truetype");
+}
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "refills/type-system-serif";
+@import "base/base";
+@import "refills/refills";
+@import "refills/side-image";
+
+body {
+  // background: #000000;
+  // color: #fff;
+}
+
+.container {
+  @include outer-container();
+
+  .quote {
+    p {
+      color: white;
+      font-size: 48px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+}
+
+#links {
+  div {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  a.some-button {
+    border: 1px solid $blue;
+    color: white;
+    border-radius: 2px;
+    background-color: $blue;
+    padding: 5px;
+  }
+}

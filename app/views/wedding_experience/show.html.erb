@@ -1,0 +1,23 @@
+<%= javascript_include_tag "wedding_experience/show" %>
+<div id="lineDrawing" style="display:none;">
+  <%= render partial: "logo_again" %>
+</div>
+<div class='container'>
+  <h1 class='someshow'></h1>
+  <div class="quote">
+    <p class="first">there is something I've been wanting to show you</p>
+    <p class="second">I don't think we've had a chance quite yet</p>
+    <p class="third">but why don't we do this right now?</p>
+    <p class="final">let's take a trip down memory lane...</p>
+  </div>
+  <div id="links">
+    <div class="link-one">
+      <%= link_to "Gallery", gallery_wedding_experience_path, method: :get, class: "some-button" %>
+    </div>
+    <div class="link-two">
+      <%= link_to "Gallery", gallery_wedding_experience_path, method: :get, class: "some-button" %>
+    </div>
+  </div>
+</div>
+
+<audio loop class="two-of-us" src="<%= audio_path 'two-of-us.mp3'%>" type="audio/mpeg"></audio>

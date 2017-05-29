@@ -6,4 +6,11 @@ Rails.application.routes.draw do
   match 'the_hotel' => 'high_voltage/pages#show', id: 'the_hotel', via: :get
   match 'the_venue' => 'high_voltage/pages#show', id: 'the_venue', via: :get
   match 'the_ceremony' => 'high_voltage/pages#show', id: 'the_ceremony', via: :get
+
+  resource :wedding_experience,
+    only:       :show,
+    as:         "wedding_experience",
+    controller: "wedding_experience" do
+      get :gallery
+    end
 end
