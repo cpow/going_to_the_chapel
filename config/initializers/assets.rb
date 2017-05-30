@@ -4,7 +4,9 @@
 Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( wedding-experience.css )
 Rails.application.config.assets.precompile += %w( anime.min.js )
+Rails.application.config.assets.precompile += %w( viewer.min.js )
 Rails.application.config.assets.precompile += %w( wedding_experience.js )
+Rails.application.config.assets.precompile += %w( viewer.min.css )
 Rails.application.config.assets.precompile += %w( wedding_experience/* )
 
 # Add additional assets to the asset load path

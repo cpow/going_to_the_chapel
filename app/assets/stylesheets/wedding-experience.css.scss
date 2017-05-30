@@ -22,6 +22,9 @@ body {
 
 .container {
   @include outer-container();
+  position: absolute;
+  top: 0;
+  left: 15%;
 
   .quote {
     p {
@@ -33,7 +36,16 @@ body {
   }
 }
 
+ul.images {
+  width: 40%;
+  li {
+    display: inline
+  }
+}
+
 #links {
+  z-index: 9999;
+
   div {
     display: inline-block;
     margin: 20px;

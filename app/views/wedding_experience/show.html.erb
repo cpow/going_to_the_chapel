@@ -1,8 +1,12 @@
 <%= javascript_include_tag "wedding_experience/show" %>
-<div id="lineDrawing" style="display:none;">
-  <%= render partial: "logo_again" %>
-</div>
-<div class='container'>
+
+<audio loop class="two-of-us" src="<%= audio_path 'intro-song.mp3'%>" type="audio/mpeg"></audio>
+
+
+<div class='container beginning'>
+  <div id="lineDrawing" style="display:none;">
+    <%= render partial: "logo_again" %>
+  </div>
   <h1 class='someshow'></h1>
   <div class="quote">
     <p class="first">there is something I've been wanting to show you</p>
@@ -12,12 +16,18 @@
   </div>
   <div id="links">
     <div class="link-one">
-      <%= link_to "Gallery", gallery_wedding_experience_path, method: :get, class: "some-button" %>
+      <%= link_to "Gallery", "#", class: "gallery-button" %>
     </div>
     <div class="link-two">
-      <%= link_to "Gallery", gallery_wedding_experience_path, method: :get, class: "some-button" %>
+      <%= link_to "Gallery", "#", class: "some-button" %>
     </div>
   </div>
 </div>
 
-<audio loop class="two-of-us" src="<%= audio_path 'two-of-us.mp3'%>" type="audio/mpeg"></audio>
+
+<div class='container gallery'>
+  <h1>This is the gallery of our wedding</h1>
+  <%= link_to "Back To Beginning", "#", class: "back-to-beginning" %>
+  <div class="all-images">
+  </div>
+</div>
