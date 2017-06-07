@@ -8,9 +8,11 @@
   <%= javascript_include_tag 'anime.min' %>
   <%= javascript_include_tag 'wedding_experience' %>
   <%= javascript_include_tag 'viewer.min' %>
+  <%= javascript_include_tag "wedding_experience/show" %>
 </head>
 <body>
   <%= yield %>
+  <%= yield :javascript %>
 </body>
 </html>
 

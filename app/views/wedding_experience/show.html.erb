@@ -1,11 +1,34 @@
-<%= javascript_include_tag "wedding_experience/show" %>
+<% content_for :javascript do %>
+  <script type="text/javascript">
+    let context = {};
+    context.ceremony = '<%= raw(@ceremony).html_safe %>';
+    context.party = '<%= raw(@party).html_safe %>';
+    context.getting_ready = '<%= raw(@getting_ready).html_safe %>';
+    context.captains_cove = '<%= raw(@captains_cove).html_safe %>';
+    App.initialize(context);
+    App.runApplication();
+  </script>
+<% end %>
+
+<div class="container saying" style="text-align:center;">
+  <h1 class="pre">Do you remember...</h1>
+  <h1 class="saying" style="font-style:italic;">
+  </h1>
+</div>
+
+<div class='container gallery'>
+  <h1>This is the gallery of our wedding</h1>
+  <%= link_to "Back To Beginning", "#", class: "back-to-beginning" %>
+  <div class="all-images">
+  </div>
+</div>
+
 
 <audio loop class="two-of-us" src="<%= audio_path 'intro-song.mp3'%>" type="audio/mpeg"></audio>
 
-
 <div class='container beginning'>
   <div id="lineDrawing" style="display:none;">
-    <%= render partial: "logo_again" %>
+    <%= image_tag 'cpow-and-ghandi-logo.png' %>
   </div>
   <h1 class='someshow'></h1>
   <div class="quote">
@@ -16,10 +39,10 @@
   </div>
   <div id="links">
     <div class="link-one">
-      <%= link_to "Gallery", "#", class: "gallery-button" %>
+      <%= link_to "Gallery", "#", class: "gallery-button btn" %>
     </div>
     <div class="link-two">
-      <%= link_to "Gallery", "#", class: "some-button" %>
+      <%= link_to "Our Dance", "#", class: "video-button btn" %>
     </div>
   </div>
 </div>
@@ -30,4 +53,15 @@
   <%= link_to "Back To Beginning", "#", class: "back-to-beginning" %>
   <div class="all-images">
   </div>
+</div>
+
+<div class='container video'>
+  <h1>Time of my life...</h1>
+  <%= link_to "Back To Beginning", "#", class: "back-to-beginning" %>
+  <div class="video-iframe">
+  </div>
+</div>
+
+<div id="loader" class="container" style="display:none;">
+  <h1>LOADING</h1>
 </div>

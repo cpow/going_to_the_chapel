@@ -9,6 +9,12 @@ Rails.application.config.assets.precompile += %w( wedding_experience.js )
 Rails.application.config.assets.precompile += %w( viewer.min.css )
 Rails.application.config.assets.precompile += %w( wedding_experience/* )
 
+Dir.glob("#{Rails.root}/app/assets/images/**/").each do |path|
+  Rails.application.config.assets.paths << path
+end
+
+Rails.application.config.assets.paths << "#{Rails.root}/app/assets/videos"
+
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 
