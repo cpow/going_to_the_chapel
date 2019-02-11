@@ -4,7 +4,7 @@ ruby '2.4.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.11'
 gem "font-awesome-rails"
-gem 'pg'
+gem 'pg', '~> 0.18'
 gem 'high_voltage'
 gem 'bourbon'
 gem 'bitters'
